@@ -1,0 +1,70 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ---- Virtual envs ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Tests / coverage ----
+.pytest_cache/
+.coverage
+.tox/
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- IDE ----
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---- Secrets / local config (NEVER commit) ----
+.env
+.env.*
+!.env.example
+secrets.yaml
+secrets.json
+
+# ---- Runtime artifacts (bot writes these at runtime) ----
+carry_state.json
+carry_health.json
+carry_dashboard_log.jsonl
+*.log
+
+# ---- Worktree isolation (skill-mandated) ----
+.worktrees/
+worktrees/
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Claude Code local config (already excluded globally,
+#      repeated here for portability if global ignore is removed) ----
+.claude/settings.local.json
