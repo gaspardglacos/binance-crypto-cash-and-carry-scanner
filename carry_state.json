@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-08-03T22:02:13.598842+00:00",
+  "benchmark": {
+    "yield": 0.03700000047683716,
+    "source": "^IRX",
+    "is_live": true,
+    "last_update": "2026-08-03T22:01:17.638391+00:00",
+    "error": null
+  },
+  "account": {
+    "enabled": false,
+    "futures_available_balance_usdt": null,
+    "futures_wallet_balance_usdt": null,
+    "spot_usdt_free": null,
+    "last_update": null,
+    "error": null
+  },
+  "contracts": [
+    {
+      "name": "BTC CUR 260925",
+      "spot_symbol": "BTCUSDT",
+      "futures_symbol": "BTCUSDT_260925",
+      "expiry": "2026-09-25T08:00:00+00:00",
+      "min_qty": 0.001,
+      "max_qty": 0.1,
+      "qty_step": 0.001,
+      "min_profit_usdt": 0.5
+    },
+    {
+      "name": "BTC NEXT 261225",
+      "spot_symbol": "BTCUSDT",
+      "futures_symbol": "BTCUSDT_261225",
+      "expiry": "2026-12-25T08:00:00+00:00",
+      "min_qty": 0.001,
+      "max_qty": 0.1,
+      "qty_step": 0.001,
+      "min_profit_usdt": 0.5
+    },
+    {
+      "name": "ETH CUR 260925",
+      "spot_symbol": "ETHUSDT",
+      "futures_symbol": "ETHUSDT_260925",
+      "expiry": "2026-09-25T08:00:00+00:00",
+      "min_qty": 0.001,
+      "max_qty": 1.0,
+      "qty_step": 0.001,
+      "min_profit_usdt": 0.5
+    },
+    {
+      "name": "ETH NEXT 261225",
+      "spot_symbol": "ETHUSDT",
+      "futures_symbol": "ETHUSDT_261225",
+      "expiry": "2026-12-25T08:00:00+00:00",
+      "min_qty": 0.001,
+      "max_qty": 1.0,
+      "qty_step": 0.001,
+      "min_profit_usdt": 0.5
+    }
+  ],
+  "last_contract_update": "2026-08-03 22:01:17 UTC",
+  "roll_error": null
+}

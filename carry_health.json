@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-08-03T22:02:13.597450+00:00",
+  "benchmark_ok": true,
+  "benchmark_age_seconds": 55.959059,
+  "roll_ok": true,
+  "roll_error": null,
+  "account_ok": true,
+  "account_error": null,
+  "account_age_seconds": null,
+  "assets": {
+    "BTC CUR 260925": {
+      "spot_ok": true,
+      "futures_ok": true,
+      "spot_age_ms": 0.042438507080078125,
+      "futures_age_ms": 27.839183807373047,
+      "spot_error": null,
+      "futures_error": null,
+      "latest_result_time": 1785794533.5582643
+    },
+    "BTC NEXT 261225": {
+      "spot_ok": true,
+      "futures_ok": true,
+      "spot_age_ms": 1.6143321990966797,
+      "futures_age_ms": 3.5355091094970703,
+      "spot_error": null,
+      "futures_error": null,
+      "latest_result_time": 1785794533.559969
+    },
+    "ETH CUR 260925": {
+      "spot_ok": true,
+      "futures_ok": true,
+      "spot_age_ms": 20.986080169677734,
+      "futures_age_ms": 0.034809112548828125,
+      "spot_error": null,
+      "futures_error": null,
+      "latest_result_time": 1785794533.587321
+    },
+    "ETH NEXT 261225": {
+      "spot_ok": true,
+      "futures_ok": true,
+      "spot_age_ms": 30.646562576293945,
+      "futures_age_ms": 9.667634963989258,
+      "spot_error": null,
+      "futures_error": null,
+      "latest_result_time": 1785794533.5973003
+    }
+  }
+}
