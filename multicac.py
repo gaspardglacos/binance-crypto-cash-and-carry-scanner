@@ -22,12 +22,10 @@ FUTURES_WS_BASE = "wss://fstream.binance.com/ws"
 SPOT_REST_BASE = "https://api.binance.com"
 FUTURES_REST_BASE = "https://fapi.binance.com"
 
-# Replace this with your ntfy topic if you want alerts enabled by default.
-# Example: "https://ntfy.sh/gaspard-cac-alerts-9f3k2"
-DEFAULT_ALERT_WEBHOOK_URL = os.getenv(
-    "CARRY_ALERT_WEBHOOK_URL",
-    "https://ntfy.sh/gaspard-cac-alerts-keolis-588369"
-)
+# Alerts are opt-in. Set CARRY_ALERT_WEBHOOK_URL to an ntfy.sh (or compatible)
+# topic URL to receive push notifications when trade opportunities appear.
+# Example: "https://ntfy.sh/your-topic-name"
+DEFAULT_ALERT_WEBHOOK_URL = os.getenv("CARRY_ALERT_WEBHOOK_URL")
 
 YFINANCE_BENCHMARKS = [
     {
