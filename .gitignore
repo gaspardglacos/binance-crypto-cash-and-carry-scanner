@@ -47,15 +47,35 @@ htmlcov/
 # ---- Secrets / local config (NEVER commit) ----
 .env
 .env.*
+*.env
 !.env.example
 secrets.yaml
 secrets.json
+secrets.*
+*.key
+*.pem
+*.pfx
+*.p12
+
+# ---- SSH / GPG private keys ----
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.asc
+*.gpg
+
+# ---- Databases ----
+*.sqlite
+*.sqlite3
+*.db
 
 # ---- Runtime artifacts (bot writes these at runtime) ----
 carry_state.json
 carry_health.json
 carry_dashboard_log.jsonl
 *.log
+*.jsonl
 
 # ---- Worktree isolation (skill-mandated) ----
 .worktrees/
