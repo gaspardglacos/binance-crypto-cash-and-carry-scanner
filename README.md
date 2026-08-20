@@ -98,8 +98,8 @@ reconnect-on-error with backoff.
 Requires **Python 3.10+**.
 
 ```bash
-git clone <your-fork-url>
-cd <repo>
+git clone https://github.com/gaspardglacos/binance-crypto-cash-and-carry-scanner.git
+cd binance-crypto-cash-and-carry-scanner
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt            # runtime deps
@@ -175,7 +175,7 @@ export BINANCE_API_SECRET=...
 python multicac.py --enable-account-risk
 ```
 
-With push alerts (ntfy.sh topic):
+With push alerts (create a free ntfy.sh topic and put it here):
 
 ```bash
 export CARRY_ALERT_WEBHOOK_URL=https://ntfy.sh/your-topic-name
