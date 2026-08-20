@@ -1,0 +1,48 @@
+# VCS
+.git/
+.gitignore
+.gitattributes
+
+# Worktrees
+.worktrees/
+worktrees/
+
+# Python build/test artifacts
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Tests aren't needed in the production image
+tests/
+
+# Local-only files (state, logs, secrets, env)
+*.log
+*.jsonl
+*.json
+.env
+.env.*
+secrets.*
+
+# Project docs / config not needed at runtime
+README.md
+LICENSE
+requirements-dev.txt
+pytest.ini
+docs/
+
+# IDE / OS junk
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Unrelated sibling project present in the working tree
+equity-risk-dashboard/
+
+# Claude Code local config
+.claude/

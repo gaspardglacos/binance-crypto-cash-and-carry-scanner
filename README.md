@@ -102,16 +102,46 @@ git clone <your-fork-url>
 cd <repo>
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt            # runtime deps
+pip install -r requirements-dev.txt        # adds pytest, ruff, mypy
 ```
 
 ### Dependencies
+
+**Runtime** (`requirements.txt`):
 
 | Package | Why |
 |---|---|
 | `websockets` | Binance Spot + Futures depth streams |
 | `aiohttp` | Signed REST (account, exchangeInfo) + ntfy alerts |
 | `yfinance` | Live 13-week T-bill yield (`^IRX`) |
+
+**Dev** (`requirements-dev.txt`, layered on top of runtime):
+
+| Package | Why |
+|---|---|
+| `pytest` + `pytest-asyncio` | Run the unit test suite |
+| `ruff`, `mypy` | Linting and type-checking (optional) |
+
+### Docker
+
+A `Dockerfile` is included. Build and run:
+
+```bash
+docker build -t binance-cash-and-carry-scanner .
+
+# Default: prints --help and exits (no network calls)
+docker run --rm binance-cash-and-carry-scanner
+
+# Run the actual scanner
+docker run --rm -it binance-cash-and-carry-scanner \
+    --no-startup-alert --base-pair BTCUSDT
+```
+
+The image is based on `python:3.12-slim`, runs as a non-root `scanner` user,
+and only contains the runtime dependencies — `tests/`, dev tooling, and the
+working-tree noise (`.git/`, `.worktrees/`, caches) are excluded by
+`.dockerignore`.
 
 ---
 
